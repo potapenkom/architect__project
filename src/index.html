@@ -15,84 +15,82 @@
 	<header class="header">
 		<div class="container">
 
-			<nav class="navbar navbar-expand-xl navbar-expand-lg">
+			<div class="row align-items-center">
 
-				<a class=" navbar-brand header__logo">
+				<div class="col-xl-2 col-lg-2">
+					<a class="header__logo">
 
-					<img src="./img/logo.png" alt="logo" class="header__img">
+						<img src="./img/logo.png" alt="logo" class="header__img">
 
-					<p class="header__text">
-						Architect
-					</p>
+						<p class="header__text">
+							Architect
+						</p>
 
-				</a>
+					</a>
+					
+					<a href="javascript:void(0);" class="header__toggles" onclick="toggleButton()">
+						<img src="./img/menu.png" alt="menu" class="header__toggle">
+						<p class="header__menu">menu</p>
+					</a>
+	
+				</div>
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<img src="./img/menu.png" alt="menu" class="header__button">
-					<p class="header__menu">menu</p>
-				 </button>
+				<div class="col-xl-9 col-lg-9">
+					<ul class="header__navbar d-flex" id="menu">
 
-				<div class="collapse navbar-collapse header__nav" id="navbarSupportedContent">
-					<ul class="header__navbar d-flex">
-
-						<li class="nav-item header__links">
-							<a href="#" class="nav-lin header__link">Home</a>
+						<li class="header__links">
+							<a href="#" class="header__link">Home</a>
 						</li>
 
-						<li class="nav-item header__links">
-							<a href="#" class="nav-lin header__link">Architecture</a>
+						<li class="header__links">
+							<a href="#" class="header__link">Architecture</a>
 						</li>
 
-						<li class="nav-item header__links">
-							<a href="#" class="nav-lin header__link">Architecture</a>
+						<li class="header__links">
+							<a href="#" class="header__link">Architecture</a>
 						</li>
 
-						<li class="nav-item header__links">
-							<a href="#" class="nav-lin header__link">Strange Buildings</a>
+						<li class="header__links">
+							<a href="#" class="header__link">Strange Buildings</a>
 						</li>
 
-						<li class="nav-item header__links">
-							<a href="#" class="nav-lin header__link">MAGAZINE</a>
+						<li class="header__links">
+							<a href="#" class="header__link">MAGAZINE</a>
 						</li>
 
-						<li class="nav-item header__links">
-							<a href="#" class="nav-lin header__link">blog</a>
+						<li class="header__links">
+							<a href="#" class="header__link">blog</a>
 						</li>
 
-						<li class="nav-item header__links">
-							<a href="#" class="nav-lin header__link">news</a>
-						</li>
-
-						<li class="nav-item header__links">
-						</li>
-
-						<li class="nav-item header__links">
-						</li>
-
-						<li class="nav-item header__links">
+						<li class="header__links">
+							<a href="#" class="header__link">news</a>
 						</li>
 
 					</ul>
 
 				</div>
 
-				<div class="header__items d-flex">
+				<div class="col-xl-1 col-lg-1">
 
-					<a class="nav-lin header__icon">
-						<img src="./img/twitter.png" alt="twitter" class="header__img">
-					</a>
+					<div class="header__items d-flex">
 
-					<a class="nav-lin header__icon">
-						<img src="./img/faceboock.png" alt="faceboock" class="header__img">
-					</a>
+						<a class="header__icon">
+							<img src="./img/twitter.png" alt="twitter" class="header__img">
+						</a>
 
-					<a class="nav-lin header__icon">
-						<img src="./img/google.png" alt="google" class="header__img">
-					</a>
+						<a class="header__icon">
+							<img src="./img/faceboock.png" alt="faceboock" class="header__img">
+						</a>
+
+						<a class="header__icon">
+							<img src="./img/google.png" alt="google" class="header__img">
+						</a>
+
+					</div>
 
 				</div>
 
-			</nav>
+			</div>
 
 		</div>
 

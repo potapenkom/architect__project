@@ -11,15 +11,12 @@ body
     background-size: cover
     padding: 20px 0 25px
 
-.navbar
-    padding: 0
-
 .header__logo
     display: flex
     align-items: center
 
 .header__img
-    margin: 0 15px 0 0 
+    margin: 0 5px 0 0 
 
 .header__text
     font-size: 22px
@@ -27,9 +24,19 @@ body
     font-weight: bold
     line-height: 1.2
     text-align: center
-    
+
+.header__navbar.responsive
+    @media (max-width: 991.98px)
+        justify-content: flex-start
+
 .header__links
     margin: 0 0 0 22px
+    @media (max-width: 991.98px)
+        display: none
+
+.header__links.responsive
+    @media (max-width: 991.98px)
+        display: inline-block
 
 .header__link
     text-decoration: none
@@ -48,10 +55,17 @@ body
         text-decoration: none
         color:#fff
         cursor: pointer 
-    
+
+.header__toggles
+    display: none  
+    @media (max-width: 991.98px)
+        display: inline-block
+
 .header__menu
   font-size: 14px
   color: #ffffff
   line-height: 1.2
   text-align: center
+
+
 
