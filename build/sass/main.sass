@@ -5,18 +5,30 @@ body
 .container
     max-width: 1170px
     margin: 0 auto
+    @media (max-width: 1100px)
+        padding: 0 10px
+
+/*Section HEADER*/
 
 .header
     background-color: #1d2124
     background-size: cover
-    padding: 20px 0 25px
+    padding: 20px 0 22px
 
-.header__logo
+.header__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @media (max-width: 992px)
+        align-items: flex-start
+
+.header__brend
     display: flex
     align-items: center
+    cursor: pointer
 
 .header__img
-    margin: 0 5px 0 0 
+    margin: 0 18px 0 0 
 
 .header__text
     font-size: 22px
@@ -25,18 +37,39 @@ body
     line-height: 1.2
     text-align: center
 
-.header__navbar.responsive
-    @media (max-width: 991.98px)
-        justify-content: flex-start
+.show
+    display: none
+
+.header__nav
+    @media (max-width: 992px)
+        display: flex
+        flex-direction: column
+        align-items: center
+    
+.header__toggles
+    display: none 
+    text-decoration: none
+    @media (max-width: 992px)
+        display: flex
+        flex-direction: column
+        align-items: center
+        cursor: pointer
+
+.header__toggle
+        width: 100%
+        max-width: 18px
+        margin: 0 0 10px 0
+
+.header__menu
+    display: inline-block
+    font-size: 14px
+    color: #ffffff
+    line-height: 1.2
+    text-align: center
 
 .header__links
-    margin: 0 0 0 22px
-    @media (max-width: 991.98px)
+    @media (max-width: 992px)
         display: none
-
-.header__links.responsive
-    @media (max-width: 991.98px)
-        display: inline-block
 
 .header__link
     text-decoration: none
@@ -44,28 +77,82 @@ body
     color: #ffffff
     text-transform: uppercase
     line-height: 1.2
+    margin: 0 0 0 35px
     &:hover
         text-decoration: none
-        color:#fff
+        color:  #fe6637
         cursor: pointer 
+    @media (max-width: 1100px)
+        margin: 0 0 0 25px
+    @media (max-width: 992px)
+        display: block
+        margin: 5px 0 0 0px
+        text-align: center
+
+.header__icons
+    @media (max-width: 1000px)
+        display: none
 
 .header__icon
-    margin: 0 0 0 5px
+    margin: 0 5px 0 0
     &:hover
         text-decoration: none
         color:#fff
         cursor: pointer 
 
-.header__toggles
-    display: none  
-    @media (max-width: 991.98px)
+.header__search
+    display: none 
+    @media (max-width: 1000px)
         display: inline-block
+       
+/*Section HEADER ends*/
 
-.header__menu
-  font-size: 14px
-  color: #ffffff
-  line-height: 1.2
-  text-align: center
+/*Section NEWS*/
 
+.news
+    height: 0
+    padding: 0 0 279px 0
+    background-repeat: no-repeat
+    background-size: cover
 
+.news__titles
+    padding: 79px 0 37px 0
 
+h1 
+    font-size: 27px
+    color: #ffffff
+    line-height: 1.2
+    text-align: center
+
+.news__buttons
+    display: flex
+    justify-content: center
+
+.news__button
+    border-radius: 4px
+    border: none
+    outline: none
+    font-size: 18px
+    color: #ffffff
+    line-height: 1.2
+    font-weight: 600
+    text-align: center
+    padding: 18px 21px 15px 21px
+    transition: .2s ease-in-out
+    &:hover
+        background: #fe6637
+        color: #fff
+    
+.btn__sub
+    background-color: #89ca62
+    margin: 0 19px 0 0
+
+.btn__best
+    background-color: #14b9d5
+
+/*Section NEWS ends*/
+
+/*Section CAROUSEL*/
+
+.carousel__item
+    height: 190px
