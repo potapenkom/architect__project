@@ -29,6 +29,8 @@ body
 
 .header__img
     margin: 0 18px 0 0 
+    @media (max-width: 576px)
+        margin: 0 8px 0 0 
 
 .header__text
     font-size: 22px
@@ -93,7 +95,6 @@ body
     @media (max-width: 576px)
         font-size: 10px
      
-
 .header__icons
     @media (max-width: 1000px)
         display: none
@@ -165,5 +166,56 @@ h1
 
 /*Section CAROUSEL*/
 
+.carousel__items
+    margin: 0 auto
+    position: relative
+
 .carousel__item
+    opacity: 1
+    display: block
+    width: 100%
     height: 190px
+    transition: .5 easy 
+    &:hover
+        opacity: .5
+
+.carousel__content
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 100%
+    max-width: 238px
+    transform: translate(-50%, -50%)  
+    font-size: 18px
+    font-weight: 700
+    color: #ffffff
+    text-align: center
+    line-height: 1.2
+
+.carousel__title
+    padding: 0 0 27px    
+
+.carousel__button
+    display: block
+    margin: 0 auto
+    color: #ffffff
+    line-height: 1.2
+    text-transform: uppercase
+    text-decoration: none
+    background-color: #14b9d5    
+    text-align: center
+    padding: 13px 13px 13px 13px
+    max-width: 115px
+    cursor: pointer
+    &:hover
+        background: #fe6637
+        color: #fff
+
+.coruusel__overplay
+    opacity: 0 
+    &:hover
+        opacity: 3
+
+
+
+
