@@ -1,11 +1,9 @@
-$(function(){
-	$('#toggle').on('click', function() {
-		$('#nav').slideToggle(300);
-		if ($(this).css('display') === 'none') {
-			$(this).removeAttr('style');
-		}
+
+$(document).ready(function(){
+	$('#toggle').click(function(){
+		$('#nav').toggleClass('show');
 	});
-	  });
+});
 
 $('#corousel').owlCarousel({
     center: true,
