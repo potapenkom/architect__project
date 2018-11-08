@@ -51,29 +51,33 @@
 
 					</ul>
 					
-					<a href="javascript:void(0);" class="header__toggle" id="toggle" style="background-image: url(./img/menu.png)">
+					<a href="javascript:void(0);" class="header__toggle" style="background-image: url(./img/menu.png)" onclick = "myFunction()">
 					</a>
 
 				<div class="header__icons">
 
-					<a class="header__icon">
+					<a href="#" class="header__icon">
 						<img src="./img/twitter.png" alt="twitter" class="header__image">
 					</a>
 
-					<a class="header__icon">
+					<a href="#"class="header__icon">
 						<img src="./img/faceboock.png" alt="faceboock" class="header__image">
 					</a>
 
-					<a class="header__icon">
+					<a href="#" class="header__icon">
 						<img src="./img/google.png" alt="google" class="header__image">
 					</a>
 
 				</div>
+				<div class="header__searchs">
 
-				<a class="header__search">
-					<img src="./img/search.png" alt="search" class="header__image">
-				</a>
+					<input type="text" class="header__input" id='input'>
 
+					<a href="#"class="header__search"  id='search' onclick='searchToggle()'>
+						<img src="./img/search.png" alt="search" class="header__image">
+					</a>
+
+				</div>
 
 			</div>
 
@@ -114,7 +118,7 @@
 		<div class="owl-carousel owl-theme" id="corousel">
 
 			<div class="carousel__items">
-
+				
 				<a>
 					<img src="./img/childrens__room.png" alt="childrens room" class="carousel__item">
 				</a>

@@ -1,9 +1,20 @@
+function myFunction() {
+    var x = document.getElementById("nav");
+    if (x.className === "header__links") {
+        x.className += " show" 
+    } else {
+        x.className = "header__links";
+    }
+}
 
-$(document).ready(function(){
-	$('#toggle').click(function(){
-		$('#nav').toggleClass('show');
-	});
-});
+function searchToggle() {
+    var y = document.getElementById("input");
+    if (y.className === "header__input") {
+        y.className += " active" 
+    } else {
+        y.className = "header__input";
+    }
+}
 
 $('#corousel').owlCarousel({
     center: true,
@@ -19,10 +30,9 @@ $('#corousel').owlCarousel({
 			items:2
         },
         600:{
-			items:3,
-			center: true
+			items:3
         },
-        1001:{
+        1050:{
 			items:4,
 			center: true
         }

@@ -70,12 +70,15 @@ body
     display: flex
     @media (max-width: 992px)
         display: none
-
 .show
-    display: block
-    position: absolute
-    right: 0
-    top: 47px
+    @media (max-width: 992px)
+        display: block
+        position: absolute
+        top: 47px
+        right: -9px
+        border: 1px solid #fff
+        background-color: #1d2124
+        padding: 0 12px 0 15px
 
 .header__link
     text-decoration: none
@@ -132,15 +135,27 @@ body
     &:hover
         text-decoration: none
         color:#fff
-        cursor: pointer 
+        cursor: pointer  
 
-.header__search
+.header__searchs
     display: none 
     @media (max-width: 1050px)
-        display: inline-block
+        display: flex
     @media (max-width: 992px)
+        flex-direction: row-reverse
         position: absolute
         left: 0
+
+.header__input
+    display: none
+
+.active
+    @media (max-width: 1050px)
+        display: block   
+        max-width: 150px  
+    @media (max-width: 576px)
+        max-width: 100px
+  
      
 /*Section HEADER ends*/
 
@@ -148,7 +163,7 @@ body
 
 .news
     height: 0
-    padding: 0 0 279px 0
+    padding: 69px 0 279px 0
     background-repeat: no-repeat
 
 .news__titles
@@ -244,7 +259,7 @@ h1
 .coruusel__overplay
     opacity: 0 
     &:hover
-        opacity: 3
+        opacity: 1
 
 
 
