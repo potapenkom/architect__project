@@ -1,315 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Architect</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Architect</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/main.css">
-</head>
+  <body>
+    <!-- begin header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a
+            class="header__brend"
+            style="background-image: url(./img/logo.png)"
+          ></a>
 
-<body>
-	<!-- begin header -->
-	<header class="header">
-		<div class="container">
+          <ul class="header__links" id="nav">
+            <li><a href="#" class="header__link">Home</a></li>
 
-			<div class="header__wrapper">
+            <li><a href="#" class="header__link">Architecture</a></li>
 
-				<a class="header__brend" style="background-image: url(./img/logo.png)"></a>
+            <li><a href="#" class="header__link">Architecture</a></li>
 
-					<ul class="header__links" id="nav">
+            <li><a href="#" class="header__link">Strange Buildings</a></li>
 
-						<li>
-							<a href="#" class="header__link">Home</a>
-						</li>
+            <li><a href="#" class="header__link">MAGAZINE</a></li>
 
-						<li>
-							<a href="#" class="header__link">Architecture</a>
-						</li>
+            <li><a href="#" class="header__link">blog</a></li>
 
-						<li>
-							<a href="#" class="header__link">Architecture</a>
-						</li>
+            <li><a href="#" class="header__link">news</a></li>
+          </ul>
 
-						<li>
-							<a href="#" class="header__link">Strange Buildings</a>
-						</li>
+          <a
+            href="javascript:void(0);"
+            class="header__toggle"
+            style="background-image: url(./img/menu.png)"
+            onclick="myFunction()"
+          >
+          </a>
 
-						<li>
-							<a href="#" class="header__link">MAGAZINE</a>
-						</li>
+          <div class="header__icons">
+            <a href="#" class="header__icon">
+              <img
+                src="./img/twitter.png"
+                alt="twitter"
+                class="header__image"
+              />
+            </a>
 
-						<li>
-							<a href="#" class="header__link">blog</a>
-						</li>
+            <a href="#" class="header__icon">
+              <img
+                src="./img/faceboock.png"
+                alt="faceboock"
+                class="header__image"
+              />
+            </a>
 
-						<li>
-							<a href="#" class="header__link">news</a>
-						</li>
+            <a href="#" class="header__icon">
+              <img src="./img/google.png" alt="google" class="header__image" />
+            </a>
+          </div>
+          <div class="header__searchs">
+            <input type="text" class="header__input" id="input" />
 
-					</ul>
+            <a href="#" class="header__search" onclick="searchToggle()">
+              <img src="./img/search.png" alt="search" class="header__image" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- begin news -->
+
+    <section class="news" style="background-image: url(./img/background.png)">
+      <div class="container">
+        <div class="news__titles">
+          <h1>THE LATEST NEWS ON DESIGN & ARCHITECTURE</h1>
+        </div>
+
+        <div class="news__buttons">
+          <button type="button" class="news__button btn__sub">
+            Subscribe Now
+          </button>
+
+          <button type="button" class="news__button btn__best">
+            Best Articles
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- end news -->
+
+    <!-- begin carousel -->
+
+   
+    <section class="carousel">
+
+			<div class="owl-carousel owl-theme" id="corousel">
+
+				<div class="carousel__items">
 					
-					<a href="javascript:void(0);" class="header__toggle" style="background-image: url(./img/menu.png)" onclick = "myFunction()">
+					<a>
+						<img src="./img/childrens__room.png" alt="childrens room" class="carousel__item">
 					</a>
-
-				<div class="header__icons">
-
-					<a href="#" class="header__icon">
-						<img src="./img/twitter.png" alt="twitter" class="header__image">
+	
+					<div class="coruusel__overplay">
+	
+						<div class="carousel__content">
+	
+							<div class="carousel__title">
+	
+								<h2>Vanglo House By LWPAC in Canda</h2>
+	
+							</div>
+	
+							<a href="#" class="carousel__button">
+								read more
+							</a>
+	
+						</div>
+	
+					</div>
+	
+				</div>
+	
+				<div class="carousel__items">
+	
+					<a>
+						<img src="./img/hall__room.png" alt="hall" class="carousel__item">
 					</a>
-
-					<a href="#"class="header__icon">
-						<img src="./img/faceboock.png" alt="faceboock" class="header__image">
+	
+					<div class="coruusel__overplay">
+	
+						<div class="carousel__content">
+	
+							<div class="carousel__title">
+	
+								<h2>Vanglo House By LWPAC in Canda</h2>
+	
+							</div>
+	
+							<a href="#" class="carousel__button">
+								read more
+							</a>
+	
+						</div>
+	
+					</div>
+	
+				</div>
+	
+				<div class="carousel__items">
+	
+					<a>
+						<img src="./img/house.png" alt="house" class="carousel__item">
 					</a>
-
-					<a href="#" class="header__icon">
-						<img src="./img/google.png" alt="google" class="header__image">
+	
+					<div class="coruusel__overplay">
+	
+						<div class="carousel__content">
+	
+							<div class="carousel__title">
+	
+								<h2>Vanglo House By LWPAC in Canda</h2>
+	
+							</div>
+	
+							<a href="#" class="carousel__button">
+								read more
+							</a>
+	
+						</div>
+	
+					</div>
+	
+				</div>
+	
+				<div class="carousel__items">
+	
+					<a>
+						<img src="./img/pool.png" alt="pool" class="carousel__item">
 					</a>
-
+	
+					<div class="coruusel__overplay">
+	
+						<div class="carousel__content">
+	
+							<div class="carousel__title">
+	
+								<h2>Vanglo House By LWPAC in Canda</h2>
+	
+							</div>
+	
+							<a href="#" class="carousel__button">
+								read more
+							</a>
+	
+						</div>
+	
+					</div>
+	
 				</div>
-				<div class="header__searchs">
-
-					<input type="text" class="header__input" id='input'>
-
-					<a href="#"class="header__search"  id='search' onclick='searchToggle()'>
-						<img src="./img/search.png" alt="search" class="header__image">
+	
+				<div class="carousel__items">
+	
+					<a>
+						<img src="./img/horse.png" alt="horse" class="carousel__item">
 					</a>
-
-				</div>
-
-			</div>
-
-		</div>
-
-	</header>
-	<!-- end header -->
-
-	<!-- begin news -->
-
-	<section class="news" style="background-image: url(./img/background.png)">
-
-		<div class="container">
-
-			<div class="news__titles">
-				<h1>THE LATEST NEWS ON DESIGN & ARCHITECTURE</h1>
-			</div>
-
-			<div class="news__buttons">
-
-				<button type="button" class="news__button btn__sub">Subscribe Now</button>
-
-				<button type="button" class="news__button btn__best">Best Articles</button>
-
-			</div>
-
-		</div>
-
-	</section>
-
-	<!-- end news -->
-
-
-	<!-- begin carousel -->
-
-	<section class="carousel">
-
-		<div class="owl-carousel owl-theme" id="corousel">
-
-			<div class="carousel__items">
-				
-				<a>
-					<img src="./img/childrens__room.png" alt="childrens room" class="carousel__item">
-				</a>
-
-				<div class="coruusel__overplay">
-
-					<div class="carousel__content">
-
-						<div class="carousel__title">
-
-							<h2>Vanglo House By LWPAC in Canda</h2>
-
+	
+					<div class="coruusel__overplay">
+	
+						<div class="carousel__content">
+	
+							<div class="carousel__title">
+	
+								<h2>Vanglo House By LWPAC in Canda</h2>
+	
+							</div>
+	
+							<a href="#" class="carousel__button">
+								read more
+							</a>
+	
 						</div>
-
-						<a href="#" class="carousel__button">
-							read more
-						</a>
-
+	
 					</div>
-
+	
 				</div>
-
-			</div>
-
-			<div class="carousel__items">
-
-				<a>
-					<img src="./img/hall__room.png" alt="hall" class="carousel__item">
-				</a>
-
-				<div class="coruusel__overplay">
-
-					<div class="carousel__content">
-
-						<div class="carousel__title">
-
-							<h2>Vanglo House By LWPAC in Canda</h2>
-
+	
+				<div class="carousel__items">
+	
+					<a>
+						<img src="./img/building.png" alt="building" class="carousel__item">
+					</a>
+	
+					<div class="coruusel__overplay">
+	
+						<div class="carousel__content">
+	
+							<div class="carousel__title">
+	
+								<h2>Vanglo House By LWPAC in Canda</h2>
+	
+							</div>
+	
+							<a href="#" class="carousel__button">
+								read more
+							</a>
+	
 						</div>
-
-						<a href="#" class="carousel__button">
-							read more
-						</a>
-
+	
 					</div>
-
+	
 				</div>
-
-			</div>
-
-			<div class="carousel__items">
-
-				<a>
-					<img src="./img/house.png" alt="house" class="carousel__item">
-				</a>
-
-				<div class="coruusel__overplay">
-
-					<div class="carousel__content">
-
-						<div class="carousel__title">
-
-							<h2>Vanglo House By LWPAC in Canda</h2>
-
+	
+				<div class="carousel__items">
+	
+					<a>
+						<img src="./img/stadium.png" alt="stadium" class="carousel__item">
+					</a>
+	
+					<div class="coruusel__overplay">
+	
+						<div class="carousel__content">
+	
+							<div class="carousel__title">
+	
+								<h2>Vanglo House By LWPAC in Canda</h2>
+	
+							</div>
+	
+							<a href="#" class="carousel__button">
+								read more
+							</a>
+	
 						</div>
-
-						<a href="#" class="carousel__button">
-							read more
-						</a>
-
+	
 					</div>
-
+	
 				</div>
-
+	
 			</div>
+	
+		</section>
+	
+		<!-- end carousel -->
 
-			<div class="carousel__items">
+    <!-- end carousel -->
 
-				<a>
-					<img src="./img/pool.png" alt="pool" class="carousel__item">
-				</a>
-
-				<div class="coruusel__overplay">
-
-					<div class="carousel__content">
-
-						<div class="carousel__title">
-
-							<h2>Vanglo House By LWPAC in Canda</h2>
-
-						</div>
-
-						<a href="#" class="carousel__button">
-							read more
-						</a>
-
-					</div>
-
-				</div>
-
-			</div>
-
-			<div class="carousel__items">
-
-				<a>
-					<img src="./img/horse.png" alt="horse" class="carousel__item">
-				</a>
-
-				<div class="coruusel__overplay">
-
-					<div class="carousel__content">
-
-						<div class="carousel__title">
-
-							<h2>Vanglo House By LWPAC in Canda</h2>
-
-						</div>
-
-						<a href="#" class="carousel__button">
-							read more
-						</a>
-
-					</div>
-
-				</div>
-
-			</div>
-
-			<div class="carousel__items">
-
-				<a>
-					<img src="./img/building.png" alt="building" class="carousel__item">
-				</a>
-
-				<div class="coruusel__overplay">
-
-					<div class="carousel__content">
-
-						<div class="carousel__title">
-
-							<h2>Vanglo House By LWPAC in Canda</h2>
-
-						</div>
-
-						<a href="#" class="carousel__button">
-							read more
-						</a>
-
-					</div>
-
-				</div>
-
-			</div>
-
-			<div class="carousel__items">
-
-				<a>
-					<img src="./img/stadium.png" alt="stadium" class="carousel__item">
-				</a>
-
-				<div class="coruusel__overplay">
-
-					<div class="carousel__content">
-
-						<div class="carousel__title">
-
-							<h2>Vanglo House By LWPAC in Canda</h2>
-
-						</div>
-
-						<a href="#" class="carousel__button">
-							read more
-						</a>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-
-	</section>
-
-	<!-- end carousel -->
-
-
-	<script src="js/vendor/jquery-3.3.1.min.js"></script>
-	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/app.js"></script>
-</body>
-
+    <script src="js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>

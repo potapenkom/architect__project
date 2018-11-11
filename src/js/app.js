@@ -1,7 +1,7 @@
 function myFunction() {
     var x = document.getElementById("nav");
     if (x.className === "header__links") {
-        x.className += " show" 
+        x.className += " hide" 
     } else {
         x.className = "header__links";
     }
@@ -10,31 +10,32 @@ function myFunction() {
 function searchToggle() {
     var y = document.getElementById("input");
     if (y.className === "header__input") {
-        y.className += " active" 
+        y.className += " show" 
     } else {
         y.className = "header__input";
     }
 }
 
 $('#corousel').owlCarousel({
-    center: true,
-	items: 4,
+    items: 4,
+    center:true,
 	nav:false,
 	dots: false,
     loop:true,
-	margin: 0,
-	stagePadding: 0,
 	responsiveClass:true,
     responsive:{
 		0:{
-			items:2
+            items:1,
+            center:false
         },
         600:{
-			items:3
+            items:3,
+            center:true
         },
-        1050:{
-			items:4,
-			center: true
+        992:{
+            items:4,
+            center:true
         }
     }
 });
+
