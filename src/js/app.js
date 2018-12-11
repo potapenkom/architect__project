@@ -39,3 +39,7 @@ $('#corousel').owlCarousel({
     }
 });
 
+$('.grid__collections').masonry({
+    
+    itemSelector: '.playful',
+  });

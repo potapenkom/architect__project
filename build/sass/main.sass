@@ -70,6 +70,7 @@ body
     display: flex
     @media (max-width: 992px)
         display: none
+
 .hide
     @media (max-width: 992px)
         display: block
@@ -245,7 +246,6 @@ h1
     &:hover
         opacity: 1
 
-
 .carousel__title
     padding: 0 0 27px    
 
@@ -272,6 +272,9 @@ h1
 .items
     background-color: #f2f2f2
 
+.buttons
+    padding: 30px 0
+
 .items__button
     font-size: 14px
     font-weight: 700
@@ -283,9 +286,14 @@ h1
     height: 90px
     border: none 
 
-.grid__itens
-    width: 100%
-    max-width: 370px
+.grid
+    padding: 24px 0 21px
+
+.grid__items
+    width: 33%
+    height: 100%
+    float: left
+    transition-duration: 0.5s
 
 .grid__content
     padding: 25px 31px 20px 20px
@@ -300,11 +308,79 @@ h1
     font-size: 14px
     color: #5b6469
     line-height: 1.5
+    padding: 29px 0 21px
 
+.grid__social
+    display: flex
+    justify-content: space-between  
+    
 .grid__links
     display: flex
-    justify-content: space-between    
+    align-items: center          
 
+.grid__icon
+    width: 35px
+    height: 25px
+
+.grid__counter
+    display: inline-block
+    width: 35px  
+    height: 25px
+    background-color: #f8f8f8
+    text-align: center
+    vertical-align: middle
+    padding: 7px 0 0 0
+    font-size: 14px
+    color: #a3a3a3
+
+.grid__collections
+    width: 100%
+    height: 455px
+
+.playful
+    position: relative
+    cursor: pointer
+    width: 33%
+    float: left
+
+.playful__big
+    width: 50%
+    
+.big__img
+    width: 180px
+    height: 168px
+
+/*.grid__img
+    width: 118px
+    height: 92px
+
+.softeffect
+    position: absolute
+    top: 0
+    left: 0 
+
+.playful__icon
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    display: flex
+    opacity: 0
+    transition: opacity 0.35s ease 0s, transform 0.35s ease 0s
+    &:hover 
+        opacity: 1
+
+.grid__search
+    display: inline-block
+    background-color: #14b9d5
+    font-size: 20px
+    padding: 12px
+    margin: 6px
+    width: 100%
+    max-width: 40px
+    color: #ffffff
+    text-align: center
+    border-radius: 5px
 /*Section ITEMS ends*/
 
 
