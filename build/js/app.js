@@ -39,7 +39,15 @@ $('#corousel').owlCarousel({
     }
 });
 
-$('.grid__collections').masonry({
-    
-    itemSelector: '.playful',
-  });
+
+$(".grid").masonry({
+     itemSelector: ".grid__items",
+     gutter: 20,
+     percentPosition: true
+});
+
+$(".grid__collections").masonry({
+    itemSelector: ".playful",
+    gutter: 4,
+    percentPosition: true
+});
