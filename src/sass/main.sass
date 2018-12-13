@@ -275,6 +275,7 @@ h1
 
 .buttons
     padding: 30px 0
+    text-align: center
 
 .items__button
     font-size: 14px
@@ -289,15 +290,20 @@ h1
 
 .grid
     padding: 24px 0 21px
-
-.grid__items
-    width: 370px
-    height: 560px
+    margin: 0 auto
+    &:after 
+        content: ''
+        display: block
+        clear: both
+ 
+.grid__items, .grid-sizer
+    width: 33.33%
     float: left
     transition-duration: 0.5s
 
 .grid__content
     padding: 25px 31px 20px 20px
+    background: #fff
 
 .grid__titles
     font-size: 18px
@@ -334,23 +340,28 @@ h1
     font-size: 14px
     color: #a3a3a3
 
-.grid__collections
-    width: 370px
+.items__show
+    padding: 25px 0 20px 20px
+    font-size: 16px
+    color: #14b9d5 
+    background: #ffffff
 
 .playful
+    width: 33.33%
     position: relative
     cursor: pointer
-    width: 120px
-    height: 92px
+    float: left
 
 .playful__big
-    width: 182px
-    height: 170px
+    width: 50%
 
-.softeffect
-    position: absolute
-    top: 0
-    left: 0 
+.playful__img
+    width: 130px
+    height: 92px 
+
+.img__sizer
+    width: 195px
+    height: 168px
 
 .playful__icon
     position: absolute
