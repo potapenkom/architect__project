@@ -290,12 +290,11 @@ h1
 
 .grid
     padding: 24px 0 21px
-    margin: 0 auto
     &:after
         content: ""
         display: table
         clear: both
-     
+
 .grid__items
     width: 370px
     transition-duration: 0.5s
@@ -323,14 +322,13 @@ h1
     
 .grid__links
     display: flex
-    align-items: center          
+    align-items: center    
 
 .grid__icon
     width: 35px
     height: 25px
 
 .grid__counter
-    display: inline-block
     width: 35px  
     height: 25px
     background-color: #f8f8f8
@@ -346,13 +344,38 @@ h1
     color: #14b9d5 
     background: #ffffff
 
-
-
 .playful
     width: 33.33%
     position: relative
     cursor: pointer
     float: left
+    overflow: hidden
+
+.playful .playful__icon
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    height: 92px
+    width: 120px
+    background-color: rgba(12, 19, 27, 0.6)
+    display: flex
+    justify-content: center
+    opacity: 0
+    transition: opacity 0.35s ease 0s, transform 0.35s ease 0s
+
+.playful .playful__large
+    width: 182px
+    height: 168px
+
+.playful:hover .playful__icon
+    opacity: 1
+
+.playful img
+    display: block
+
+.playful:hover img
+  transform: scale(1.1)
 
 .playful__big
     width: 50%
@@ -365,28 +388,25 @@ h1
     width: 182px
     height: 168px
 
-.playful__icon
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    display: flex
-    opacity: 0
-    transition: opacity 0.35s ease 0s, transform 0.35s ease 0s
-    &:hover 
-        opacity: 1
-
 .grid__search
     display: inline-block
     background-color: #14b9d5
     font-size: 20px
-    padding: 12px
-    margin: 6px
-    width: 100%
-    max-width: 40px
+    padding: 8px
+    margin: 28px 0 0 6px
+    width: 20px
+    height: 20px
+    position: relative
     color: #ffffff
     text-align: center
     border-radius: 5px
+
+.big__search
+    font-size: 20px
+    padding: 12px
+    margin: 62px 0 0 6px
+    width: 40px   
+
 /*Section ITEMS ends*/
 
 

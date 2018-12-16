@@ -39,10 +39,8 @@ $('#corousel').owlCarousel({
     }
 });
 
-
 $(".grid").masonry({
     itemSelector: ".grid__items",
-    columnWidth: 370,
-    gutter: 10,
+    columnWidth: 390,
     percentPosition: true
 });
