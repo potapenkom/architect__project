@@ -1,11 +1,12 @@
-function myFunction() {
-    var x = document.getElementById("nav");
-    if (x.className === "header__links") {
-        x.className += " hide" 
-    } else {
-        x.className = "header__links";
-    }
-}
+$(document).ready(function(){
+    $(".navigation").on('click', function() {
+        $(this).toggleClass("open");
+        $('.nav__icon').toggleClass("open");
+        $("nav ul").toggleClass('hidden');
+    });
+        
+});
+
 
 function searchToggle() {
     var y = document.getElementById("input");
